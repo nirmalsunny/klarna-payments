@@ -1,4 +1,5 @@
 <?php
+
 /**
  * AssetUrls
  *
@@ -39,29 +40,31 @@ class AssetUrls implements ModelInterface, ArrayAccess
     const DISCRIMINATOR = null;
 
     /**
-      * The original name of the model.
-      *
-      * @var string
-      */
+     * The original name of the model.
+     *
+     * @var string
+     */
     protected static $swaggerModelName = 'asset_urls';
 
     /**
-      * Array of property to type mappings. Used for (de)serialization
-      *
-      * @var string[]
-      */
+     * Array of property to type mappings. Used for (de)serialization
+     *
+     * @var string[]
+     */
     protected static $swaggerTypes = [
         'descriptive' => 'string',
-'standard' => 'string'    ];
+        'standard' => 'string'
+    ];
 
     /**
-      * Array of property to format mappings. Used for (de)serialization
-      *
-      * @var string[]
-      */
+     * Array of property to format mappings. Used for (de)serialization
+     *
+     * @var string[]
+     */
     protected static $swaggerFormats = [
         'descriptive' => null,
-'standard' => null    ];
+        'standard' => null
+    ];
 
     /**
      * Array of property to type mappings. Used for (de)serialization
@@ -91,7 +94,8 @@ class AssetUrls implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'descriptive' => 'descriptive',
-'standard' => 'standard'    ];
+        'standard' => 'standard'
+    ];
 
     /**
      * Array of attributes to setter functions (for deserialization of responses)
@@ -100,7 +104,8 @@ class AssetUrls implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'descriptive' => 'setDescriptive',
-'standard' => 'setStandard'    ];
+        'standard' => 'setStandard'
+    ];
 
     /**
      * Array of attributes to getter functions (for serialization of requests)
@@ -109,7 +114,8 @@ class AssetUrls implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'descriptive' => 'getDescriptive',
-'standard' => 'getStandard'    ];
+        'standard' => 'getStandard'
+    ];
 
     /**
      * Array of attributes where the key is the local name,
@@ -152,7 +158,7 @@ class AssetUrls implements ModelInterface, ArrayAccess
         return self::$swaggerModelName;
     }
 
-    
+
 
     /**
      * Associative array for storing property values

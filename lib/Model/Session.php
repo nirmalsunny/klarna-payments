@@ -769,7 +769,7 @@ class Session implements ModelInterface, ArrayAccess
      */
     public function setOrderLines($order_lines)
     {
-        $this->container['order_lines'] = $order_lines;
+        $this->container['order_lines'][] = $order_lines;
 
         return $this;
     }

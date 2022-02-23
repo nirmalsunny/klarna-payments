@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Attachment
  *
@@ -39,29 +40,31 @@ class Attachment implements ModelInterface, ArrayAccess
     const DISCRIMINATOR = null;
 
     /**
-      * The original name of the model.
-      *
-      * @var string
-      */
+     * The original name of the model.
+     *
+     * @var string
+     */
     protected static $swaggerModelName = 'attachment';
 
     /**
-      * Array of property to type mappings. Used for (de)serialization
-      *
-      * @var string[]
-      */
+     * Array of property to type mappings. Used for (de)serialization
+     *
+     * @var string[]
+     */
     protected static $swaggerTypes = [
         'body' => 'string',
-'content_type' => 'string'    ];
+        'content_type' => 'string'
+    ];
 
     /**
-      * Array of property to format mappings. Used for (de)serialization
-      *
-      * @var string[]
-      */
+     * Array of property to format mappings. Used for (de)serialization
+     *
+     * @var string[]
+     */
     protected static $swaggerFormats = [
         'body' => null,
-'content_type' => null    ];
+        'content_type' => null
+    ];
 
     /**
      * Array of property to type mappings. Used for (de)serialization
@@ -91,7 +94,8 @@ class Attachment implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'body' => 'body',
-'content_type' => 'content_type'    ];
+        'content_type' => 'content_type'
+    ];
 
     /**
      * Array of attributes to setter functions (for deserialization of responses)
@@ -100,7 +104,8 @@ class Attachment implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'body' => 'setBody',
-'content_type' => 'setContentType'    ];
+        'content_type' => 'setContentType'
+    ];
 
     /**
      * Array of attributes to getter functions (for serialization of requests)
@@ -109,7 +114,8 @@ class Attachment implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'body' => 'getBody',
-'content_type' => 'getContentType'    ];
+        'content_type' => 'getContentType'
+    ];
 
     /**
      * Array of attributes where the key is the local name,
@@ -152,7 +158,7 @@ class Attachment implements ModelInterface, ArrayAccess
         return self::$swaggerModelName;
     }
 
-    
+
 
     /**
      * Associative array for storing property values

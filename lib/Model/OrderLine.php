@@ -1,4 +1,5 @@
 <?php
+
 /**
  * OrderLine
  *
@@ -39,53 +40,55 @@ class OrderLine implements ModelInterface, ArrayAccess
     const DISCRIMINATOR = null;
 
     /**
-      * The original name of the model.
-      *
-      * @var string
-      */
+     * The original name of the model.
+     *
+     * @var string
+     */
     protected static $swaggerModelName = 'order_line';
 
     /**
-      * Array of property to type mappings. Used for (de)serialization
-      *
-      * @var string[]
-      */
+     * Array of property to type mappings. Used for (de)serialization
+     *
+     * @var string[]
+     */
     protected static $swaggerTypes = [
         'image_url' => 'string',
-'merchant_data' => 'string',
-'name' => 'string',
-'product_identifiers' => '\nirmalsunny\KlarnaPayments\Model\ProductIdentifiers',
-'product_url' => 'string',
-'quantity' => 'int',
-'quantity_unit' => 'string',
-'reference' => 'string',
-'tax_rate' => 'int',
-'total_amount' => 'int',
-'total_discount_amount' => 'int',
-'total_tax_amount' => 'int',
-'type' => 'string',
-'unit_price' => 'int'    ];
+        'merchant_data' => 'string',
+        'name' => 'string',
+        'product_identifiers' => '\nirmalsunny\KlarnaPayments\Model\ProductIdentifiers',
+        'product_url' => 'string',
+        'quantity' => 'int',
+        'quantity_unit' => 'string',
+        'reference' => 'string',
+        'tax_rate' => 'int',
+        'total_amount' => 'int',
+        'total_discount_amount' => 'int',
+        'total_tax_amount' => 'int',
+        'type' => 'string',
+        'unit_price' => 'int'
+    ];
 
     /**
-      * Array of property to format mappings. Used for (de)serialization
-      *
-      * @var string[]
-      */
+     * Array of property to format mappings. Used for (de)serialization
+     *
+     * @var string[]
+     */
     protected static $swaggerFormats = [
         'image_url' => null,
-'merchant_data' => null,
-'name' => null,
-'product_identifiers' => null,
-'product_url' => null,
-'quantity' => 'int64',
-'quantity_unit' => null,
-'reference' => null,
-'tax_rate' => 'int64',
-'total_amount' => 'int64',
-'total_discount_amount' => 'int64',
-'total_tax_amount' => 'int64',
-'type' => null,
-'unit_price' => 'int64'    ];
+        'merchant_data' => null,
+        'name' => null,
+        'product_identifiers' => null,
+        'product_url' => null,
+        'quantity' => 'int64',
+        'quantity_unit' => null,
+        'reference' => null,
+        'tax_rate' => 'int64',
+        'total_amount' => 'int64',
+        'total_discount_amount' => 'int64',
+        'total_tax_amount' => 'int64',
+        'type' => null,
+        'unit_price' => 'int64'
+    ];
 
     /**
      * Array of property to type mappings. Used for (de)serialization
@@ -115,19 +118,20 @@ class OrderLine implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'image_url' => 'image_url',
-'merchant_data' => 'merchant_data',
-'name' => 'name',
-'product_identifiers' => 'product_identifiers',
-'product_url' => 'product_url',
-'quantity' => 'quantity',
-'quantity_unit' => 'quantity_unit',
-'reference' => 'reference',
-'tax_rate' => 'tax_rate',
-'total_amount' => 'total_amount',
-'total_discount_amount' => 'total_discount_amount',
-'total_tax_amount' => 'total_tax_amount',
-'type' => 'type',
-'unit_price' => 'unit_price'    ];
+        'merchant_data' => 'merchant_data',
+        'name' => 'name',
+        'product_identifiers' => 'product_identifiers',
+        'product_url' => 'product_url',
+        'quantity' => 'quantity',
+        'quantity_unit' => 'quantity_unit',
+        'reference' => 'reference',
+        'tax_rate' => 'tax_rate',
+        'total_amount' => 'total_amount',
+        'total_discount_amount' => 'total_discount_amount',
+        'total_tax_amount' => 'total_tax_amount',
+        'type' => 'type',
+        'unit_price' => 'unit_price'
+    ];
 
     /**
      * Array of attributes to setter functions (for deserialization of responses)
@@ -136,19 +140,20 @@ class OrderLine implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'image_url' => 'setImageUrl',
-'merchant_data' => 'setMerchantData',
-'name' => 'setName',
-'product_identifiers' => 'setProductIdentifiers',
-'product_url' => 'setProductUrl',
-'quantity' => 'setQuantity',
-'quantity_unit' => 'setQuantityUnit',
-'reference' => 'setReference',
-'tax_rate' => 'setTaxRate',
-'total_amount' => 'setTotalAmount',
-'total_discount_amount' => 'setTotalDiscountAmount',
-'total_tax_amount' => 'setTotalTaxAmount',
-'type' => 'setType',
-'unit_price' => 'setUnitPrice'    ];
+        'merchant_data' => 'setMerchantData',
+        'name' => 'setName',
+        'product_identifiers' => 'setProductIdentifiers',
+        'product_url' => 'setProductUrl',
+        'quantity' => 'setQuantity',
+        'quantity_unit' => 'setQuantityUnit',
+        'reference' => 'setReference',
+        'tax_rate' => 'setTaxRate',
+        'total_amount' => 'setTotalAmount',
+        'total_discount_amount' => 'setTotalDiscountAmount',
+        'total_tax_amount' => 'setTotalTaxAmount',
+        'type' => 'setType',
+        'unit_price' => 'setUnitPrice'
+    ];
 
     /**
      * Array of attributes to getter functions (for serialization of requests)
@@ -157,19 +162,20 @@ class OrderLine implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'image_url' => 'getImageUrl',
-'merchant_data' => 'getMerchantData',
-'name' => 'getName',
-'product_identifiers' => 'getProductIdentifiers',
-'product_url' => 'getProductUrl',
-'quantity' => 'getQuantity',
-'quantity_unit' => 'getQuantityUnit',
-'reference' => 'getReference',
-'tax_rate' => 'getTaxRate',
-'total_amount' => 'getTotalAmount',
-'total_discount_amount' => 'getTotalDiscountAmount',
-'total_tax_amount' => 'getTotalTaxAmount',
-'type' => 'getType',
-'unit_price' => 'getUnitPrice'    ];
+        'merchant_data' => 'getMerchantData',
+        'name' => 'getName',
+        'product_identifiers' => 'getProductIdentifiers',
+        'product_url' => 'getProductUrl',
+        'quantity' => 'getQuantity',
+        'quantity_unit' => 'getQuantityUnit',
+        'reference' => 'getReference',
+        'tax_rate' => 'getTaxRate',
+        'total_amount' => 'getTotalAmount',
+        'total_discount_amount' => 'getTotalDiscountAmount',
+        'total_tax_amount' => 'getTotalTaxAmount',
+        'type' => 'getType',
+        'unit_price' => 'getUnitPrice'
+    ];
 
     /**
      * Array of attributes where the key is the local name,
@@ -212,7 +218,7 @@ class OrderLine implements ModelInterface, ArrayAccess
         return self::$swaggerModelName;
     }
 
-    
+
 
     /**
      * Associative array for storing property values

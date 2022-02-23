@@ -1,4 +1,5 @@
 <?php
+
 /**
  * AttachmentDisplayBodyAirReservationDetails
  *
@@ -39,35 +40,37 @@ class AttachmentDisplayBodyAirReservationDetails implements ModelInterface, Arra
     const DISCRIMINATOR = null;
 
     /**
-      * The original name of the model.
-      *
-      * @var string
-      */
+     * The original name of the model.
+     *
+     * @var string
+     */
     protected static $swaggerModelName = 'attachment_display_body_air_reservation_details';
 
     /**
-      * Array of property to type mappings. Used for (de)serialization
-      *
-      * @var string[]
-      */
+     * Array of property to type mappings. Used for (de)serialization
+     *
+     * @var string[]
+     */
     protected static $swaggerTypes = [
         'pnr' => 'string',
-'itinerary' => '\nirmalsunny\KlarnaPayments\Model\AttachmentDisplayBodyItinerary[]',
-'insurance' => '\nirmalsunny\KlarnaPayments\Model\AttachmentDisplayBodyInsurance[]',
-'passengers' => '\nirmalsunny\KlarnaPayments\Model\AttachmentDisplayBodyPassengers[]',
-'affiliate_name' => 'string'    ];
+        'itinerary' => '\nirmalsunny\KlarnaPayments\Model\AttachmentDisplayBodyItinerary[]',
+        'insurance' => '\nirmalsunny\KlarnaPayments\Model\AttachmentDisplayBodyInsurance[]',
+        'passengers' => '\nirmalsunny\KlarnaPayments\Model\AttachmentDisplayBodyPassengers[]',
+        'affiliate_name' => 'string'
+    ];
 
     /**
-      * Array of property to format mappings. Used for (de)serialization
-      *
-      * @var string[]
-      */
+     * Array of property to format mappings. Used for (de)serialization
+     *
+     * @var string[]
+     */
     protected static $swaggerFormats = [
         'pnr' => null,
-'itinerary' => null,
-'insurance' => null,
-'passengers' => null,
-'affiliate_name' => null    ];
+        'itinerary' => null,
+        'insurance' => null,
+        'passengers' => null,
+        'affiliate_name' => null
+    ];
 
     /**
      * Array of property to type mappings. Used for (de)serialization
@@ -97,10 +100,11 @@ class AttachmentDisplayBodyAirReservationDetails implements ModelInterface, Arra
      */
     protected static $attributeMap = [
         'pnr' => 'pnr',
-'itinerary' => 'itinerary',
-'insurance' => 'insurance',
-'passengers' => 'passengers',
-'affiliate_name' => 'affiliate_name'    ];
+        'itinerary' => 'itinerary',
+        'insurance' => 'insurance',
+        'passengers' => 'passengers',
+        'affiliate_name' => 'affiliate_name'
+    ];
 
     /**
      * Array of attributes to setter functions (for deserialization of responses)
@@ -109,10 +113,11 @@ class AttachmentDisplayBodyAirReservationDetails implements ModelInterface, Arra
      */
     protected static $setters = [
         'pnr' => 'setPnr',
-'itinerary' => 'setItinerary',
-'insurance' => 'setInsurance',
-'passengers' => 'setPassengers',
-'affiliate_name' => 'setAffiliateName'    ];
+        'itinerary' => 'setItinerary',
+        'insurance' => 'setInsurance',
+        'passengers' => 'setPassengers',
+        'affiliate_name' => 'setAffiliateName'
+    ];
 
     /**
      * Array of attributes to getter functions (for serialization of requests)
@@ -121,10 +126,11 @@ class AttachmentDisplayBodyAirReservationDetails implements ModelInterface, Arra
      */
     protected static $getters = [
         'pnr' => 'getPnr',
-'itinerary' => 'getItinerary',
-'insurance' => 'getInsurance',
-'passengers' => 'getPassengers',
-'affiliate_name' => 'getAffiliateName'    ];
+        'itinerary' => 'getItinerary',
+        'insurance' => 'getInsurance',
+        'passengers' => 'getPassengers',
+        'affiliate_name' => 'getAffiliateName'
+    ];
 
     /**
      * Array of attributes where the key is the local name,
@@ -167,7 +173,7 @@ class AttachmentDisplayBodyAirReservationDetails implements ModelInterface, Arra
         return self::$swaggerModelName;
     }
 
-    
+
 
     /**
      * Associative array for storing property values

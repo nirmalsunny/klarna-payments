@@ -1,4 +1,5 @@
 <?php
+
 /**
  * PaymentMethodCategory
  *
@@ -39,31 +40,33 @@ class PaymentMethodCategory implements ModelInterface, ArrayAccess
     const DISCRIMINATOR = null;
 
     /**
-      * The original name of the model.
-      *
-      * @var string
-      */
+     * The original name of the model.
+     *
+     * @var string
+     */
     protected static $swaggerModelName = 'payment_method_category';
 
     /**
-      * Array of property to type mappings. Used for (de)serialization
-      *
-      * @var string[]
-      */
+     * Array of property to type mappings. Used for (de)serialization
+     *
+     * @var string[]
+     */
     protected static $swaggerTypes = [
         'asset_urls' => '\nirmalsunny\KlarnaPayments\Model\AssetUrls',
-'identifier' => 'string',
-'name' => 'string'    ];
+        'identifier' => 'string',
+        'name' => 'string'
+    ];
 
     /**
-      * Array of property to format mappings. Used for (de)serialization
-      *
-      * @var string[]
-      */
+     * Array of property to format mappings. Used for (de)serialization
+     *
+     * @var string[]
+     */
     protected static $swaggerFormats = [
         'asset_urls' => null,
-'identifier' => null,
-'name' => null    ];
+        'identifier' => null,
+        'name' => null
+    ];
 
     /**
      * Array of property to type mappings. Used for (de)serialization
@@ -93,8 +96,9 @@ class PaymentMethodCategory implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'asset_urls' => 'asset_urls',
-'identifier' => 'identifier',
-'name' => 'name'    ];
+        'identifier' => 'identifier',
+        'name' => 'name'
+    ];
 
     /**
      * Array of attributes to setter functions (for deserialization of responses)
@@ -103,8 +107,9 @@ class PaymentMethodCategory implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'asset_urls' => 'setAssetUrls',
-'identifier' => 'setIdentifier',
-'name' => 'setName'    ];
+        'identifier' => 'setIdentifier',
+        'name' => 'setName'
+    ];
 
     /**
      * Array of attributes to getter functions (for serialization of requests)
@@ -113,8 +118,9 @@ class PaymentMethodCategory implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'asset_urls' => 'getAssetUrls',
-'identifier' => 'getIdentifier',
-'name' => 'getName'    ];
+        'identifier' => 'getIdentifier',
+        'name' => 'getName'
+    ];
 
     /**
      * Array of attributes where the key is the local name,
@@ -157,7 +163,7 @@ class PaymentMethodCategory implements ModelInterface, ArrayAccess
         return self::$swaggerModelName;
     }
 
-    
+
 
     /**
      * Associative array for storing property values

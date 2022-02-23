@@ -1,4 +1,5 @@
 <?php
+
 /**
  * MerchantSession
  *
@@ -39,31 +40,33 @@ class MerchantSession implements ModelInterface, ArrayAccess
     const DISCRIMINATOR = null;
 
     /**
-      * The original name of the model.
-      *
-      * @var string
-      */
+     * The original name of the model.
+     *
+     * @var string
+     */
     protected static $swaggerModelName = 'merchant_session';
 
     /**
-      * Array of property to type mappings. Used for (de)serialization
-      *
-      * @var string[]
-      */
+     * Array of property to type mappings. Used for (de)serialization
+     *
+     * @var string[]
+     */
     protected static $swaggerTypes = [
         'client_token' => 'string',
-'payment_method_categories' => '\nirmalsunny\KlarnaPayments\Model\PaymentMethodCategory[]',
-'session_id' => 'string'    ];
+        'payment_method_categories' => '\nirmalsunny\KlarnaPayments\Model\PaymentMethodCategory[]',
+        'session_id' => 'string'
+    ];
 
     /**
-      * Array of property to format mappings. Used for (de)serialization
-      *
-      * @var string[]
-      */
+     * Array of property to format mappings. Used for (de)serialization
+     *
+     * @var string[]
+     */
     protected static $swaggerFormats = [
         'client_token' => null,
-'payment_method_categories' => null,
-'session_id' => null    ];
+        'payment_method_categories' => null,
+        'session_id' => null
+    ];
 
     /**
      * Array of property to type mappings. Used for (de)serialization
@@ -93,8 +96,9 @@ class MerchantSession implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'client_token' => 'client_token',
-'payment_method_categories' => 'payment_method_categories',
-'session_id' => 'session_id'    ];
+        'payment_method_categories' => 'payment_method_categories',
+        'session_id' => 'session_id'
+    ];
 
     /**
      * Array of attributes to setter functions (for deserialization of responses)
@@ -103,8 +107,9 @@ class MerchantSession implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'client_token' => 'setClientToken',
-'payment_method_categories' => 'setPaymentMethodCategories',
-'session_id' => 'setSessionId'    ];
+        'payment_method_categories' => 'setPaymentMethodCategories',
+        'session_id' => 'setSessionId'
+    ];
 
     /**
      * Array of attributes to getter functions (for serialization of requests)
@@ -113,8 +118,9 @@ class MerchantSession implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'client_token' => 'getClientToken',
-'payment_method_categories' => 'getPaymentMethodCategories',
-'session_id' => 'getSessionId'    ];
+        'payment_method_categories' => 'getPaymentMethodCategories',
+        'session_id' => 'getSessionId'
+    ];
 
     /**
      * Array of attributes where the key is the local name,
@@ -157,7 +163,7 @@ class MerchantSession implements ModelInterface, ArrayAccess
         return self::$swaggerModelName;
     }
 
-    
+
 
     /**
      * Associative array for storing property values
