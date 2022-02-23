@@ -1,8 +1,8 @@
 <?php
 
-use \nirmalsunny\KlarnaPayments\ApiException;
-
 require_once(__DIR__ . '/vendor/autoload.php');
+
+use \nirmalsunny\KlarnaPayments\ApiException;
 
 $config = \nirmalsunny\KlarnaPayments\Configuration::getDefaultConfiguration();
 $config->setUsername('');
