@@ -1,0 +1,36 @@
+{
+    "name": "nirmalsunny/klarna-payments",
+    "description": "",
+    "keywords": [
+        "swagger",
+        "php",
+        "sdk",
+        "api",
+        "klarna"
+    ],
+    "homepage": "https://github.com/nirmalsunny/klarna-payments",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nirmal Sunny",
+            "homepage": "https://github.com/nirmalsunny/klarna-payments"
+        }
+    ],
+    "require": {
+        "php": ">=5.5",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "guzzlehttp/guzzle": "^6.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^4.8",
+        "squizlabs/php_codesniffer": "^2.6"
+    },
+    "autoload": {
+        "psr-4": { "nirmalsunny\\KlarnaPayments\\" : "lib/" }
+    },
+    "autoload-dev": {
+        "psr-4": { "nirmalsunny\\KlarnaPayments\\" : "test/" }
+    }
+}
