@@ -44,7 +44,7 @@ Or, you already have a project?
         "guzzlehttp/guzzle": "^6.2"
     }
 ```
- - run `composer update'
+ - run `composer update`
 
 
 ## Tests
@@ -111,6 +111,9 @@ try {
 }
 ?>
 ```
+## Example
+
+`session.php` is an example on how to create a session which is the first step in the flow.
 
 ## Documentation for API Endpoints
 
